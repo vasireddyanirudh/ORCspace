@@ -7,7 +7,7 @@
 //
 
 #import "ApiWrapper.h"
-
+#import "ApiModel.h"
 @interface ApiWrapper ()
 
 @end
@@ -16,12 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSData*)createBody:(NSData*)body{
+
+    ApiModel *apiM = [[ApiModel alloc]init];
+    NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"Acorn-Analytics"], 0.6);
+   
+    body = [self createBodyWithBoundary:apiM.boundary
+                             parameters:apiM.parametersDictionary
+                              imageData:imageData
+                               filename:@"Acorn-Analytics.png"];
+    return body;
 }
 
 - (NSData *) createBodyWithBoundary:(NSString *)boundary parameters:(NSDictionary *)parameters imageData:(NSData*)data filename:(NSString *)filename

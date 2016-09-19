@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037244181D8F61C400AD2B1C /* ApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 037244171D8F61C400AD2B1C /* ApiModel.m */; };
 		03A324051D75F05900761134 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A324041D75F05900761134 /* main.m */; };
 		03A324081D75F05900761134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A324071D75F05900761134 /* AppDelegate.m */; };
 		03A3240B1D75F05900761134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A3240A1D75F05900761134 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037244161D8F61C400AD2B1C /* ApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiModel.h; sourceTree = "<group>"; };
+		037244171D8F61C400AD2B1C /* ApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiModel.m; sourceTree = "<group>"; };
 		03A324001D75F05800761134 /* OCR Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR Space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A324041D75F05900761134 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03A324061D75F05900761134 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 			children = (
 				03B4BD7E1D762AAE007458CF /* ApiWrapper.h */,
 				03B4BD7F1D762AAE007458CF /* ApiWrapper.m */,
+				037244161D8F61C400AD2B1C /* ApiModel.h */,
+				037244171D8F61C400AD2B1C /* ApiModel.m */,
 			);
 			name = APIService;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			files = (
 				03B4BD841D76309F007458CF /* ApiWrapper.h in Sources */,
 				03B4BD801D762AAE007458CF /* ApiWrapper.m in Sources */,
+				037244181D8F61C400AD2B1C /* ApiModel.m in Sources */,
 				03A3240B1D75F05900761134 /* ViewController.m in Sources */,
 				03B4BD7D1D7626DB007458CF /* ORCparseViewController.m in Sources */,
 				03A324081D75F05900761134 /* AppDelegate.m in Sources */,

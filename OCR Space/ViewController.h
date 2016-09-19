@@ -9,8 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "ORCparseViewController.h"
 @interface ViewController : UIViewController
-
-@property(strong,nonatomic) ORCparseViewController *orc;
-@property(strong,nonatomic) NSData *parseData;
 @end
 

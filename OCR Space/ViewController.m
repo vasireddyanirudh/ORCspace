@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ORCparseViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _orc = [[ORCparseViewController alloc]init];
-    _parseData = [[NSData alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,6 +24,8 @@
 }
 
 - (IBAction)send:(id)sender {
+    ORCparseViewController *orc = [[ORCparseViewController alloc] init];
+    NSData *parseData = [[NSData alloc]init];
     
     // Create URL request
     NSURL *url = [NSURL URLWithString:@"https://api.ocr.space/Parse/Image"];
@@ -38,7 +38,7 @@
     
 
     // Create multipart form body
-    NSData *data = [_orc parsedata:_parseData];
+    NSData *data = [orc parsedata:parseData];
     [request setHTTPBody:data];
     
     // Start data session

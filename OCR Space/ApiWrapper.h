@@ -10,5 +10,5 @@
 
 @interface ApiWrapper : UIViewController
 - (NSData *) createBodyWithBoundary:(NSString *)boundary parameters:(NSDictionary *)parameters imageData:(NSData*)data filename:(NSString *)filename;
-
+- (NSData*)createBody:(NSData*)body;
 @end
